@@ -77,6 +77,15 @@ if the installation is aborted , execute this command
 7. Install the Driver 
 >```sudo make dkms_install```
 <img src="https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/Images/kali-arm-installing.png" alt="Kali-ARM-RPi-Installing" width="70%" height="70%">
+  
+#### If encountering the following error 
+  ```
+  dkms build -m 8812au -v 5.6.4.2_35491.20191025
+  Error! echo
+  Your kernel headers for kernel 5.10.17+ cannot be found at
+  /lib/modules/5.10.17+/build or /lib/modules/5.10.17+/source
+  ```
+>```  Install rpi-source from https://github.com/RPi-Distro/rpi-source```
 
 8. Check the wireless interfaces by typing `iwconfig`.
 
